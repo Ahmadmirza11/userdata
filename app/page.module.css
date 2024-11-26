@@ -1,0 +1,79 @@
+.creditscontainer {
+  height: 91vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+}
+.background {
+  background-image: url(../public/assets/cofee.jpg);
+
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn {
+  background-color: #f5b82a;
+  width: 99px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 12px;
+  color: #ffffff;
+  border-style: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* margin-bottom: 19px; */
+}
+.name {
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.zip {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.msg {
+  color: rgb(255, 255, 255);
+  padding: 11px;
+}
+
+.credits {
+
+  animation: rollCredits 25s linear infinite;
+ 
+}
+.back {
+  padding: 15;
+  width: 75%;
+  height: 200px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(37, 37, 37);
+  align-items: center;
+  margin: 39px;
+}
+
+@keyframes rollCredits {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    margin-right: 59px;
+    margin-bottom: 22px;
+  }
+}
